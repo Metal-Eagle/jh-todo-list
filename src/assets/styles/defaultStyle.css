@@ -1,0 +1,97 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background-color: rgba(207, 207, 207, 0.363);
+  border-radius: 12px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+#nav {
+  text-align: center;
+  padding: 30px;
+}
+
+#nav a {
+  color: #007bff;
+}
+
+#nav a.router-link-exact-active {
+  color: #007bff;
+}
+
+.text {
+  text-align: center;
+  color: #000;
+}
+.input {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 10%;
+  padding: 5px 15px;
+  margin: 10px;
+}
+.btn:hover {
+  background-color: #6c757d;
+}
+
+.todoItem {
+  list-style: none;
+  margin: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #333;
+}
+
+.checkbox {
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.app input:checked ~ .checkbox {
+  background-color: #2196f3;
+}
+
+.chip {
+  background: red;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 11px;
+  margin-top: -10px;
+  min-width: 20px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  border: 1px solid #fff;
+}

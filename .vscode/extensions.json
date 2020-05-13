@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "akamud.vscode-javascript-snippet-pack",
+    "formulahendry.auto-rename-tag",
+    "CoenraadS.bracket-pair-colorizer",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "wayou.vscode-todo-highlight",
+    "icons-team.vscode-icons",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-close-tag"
+  ]
+}
