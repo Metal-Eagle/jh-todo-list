@@ -14,12 +14,11 @@ const mutations = {
     state.todos.push(todoItem)
   },
   DELETE_TODO_ITEM (state, todoItemId) {
-    state.todos = [...state.todos.filter(i => i.id !== todoItemId)];
+    state.todos = state.todos.filter(i => i.id !== todoItemId);
   },
   UPDATE_TODO_ITEM (state, todoItem) {
     const index = state.todos.findIndex(i => i.id === todoItem.id)
     state.todos.splice(index, 1, todoItem)
-    state.todos = [...state.todos]
   }
 }
 
