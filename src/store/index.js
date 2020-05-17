@@ -10,35 +10,35 @@ const state = {
 }
 
 const mutations = {
-  ADD_TODO_ITEM (state, todoItem) {
+  ADD_TODO_ITEM(state, todoItem) {
     state.todos.push(todoItem)
   },
-  DELETE_TODO_ITEM (state, todoItemId) {
+  DELETE_TODO_ITEM(state, todoItemId) {
     state.todos = state.todos.filter(i => i.id !== todoItemId);
   },
-  UPDATE_TODO_ITEM (state, todoItem) {
+  UPDATE_TODO_ITEM(state, todoItem) {
     const index = state.todos.findIndex(i => i.id === todoItem.id)
     state.todos.splice(index, 1, todoItem)
   }
 }
 
 const actions = {
-  async addTodoItem ({ commit }, todoItem) {
+  async addTodoItem({ commit }, todoItem) {
     commit("ADD_TODO_ITEM", todoItem)
   },
-  async deleteTodoItem ({ commit }, todoItem) {
+  async deleteTodoItem({ commit }, todoItem) {
     commit("DELETE_TODO_ITEM", todoItem.id)
   },
-  async updateTodoItem ({ commit }, todoItem) {
+  async updateTodoItem({ commit }, todoItem) {
     commit("UPDATE_TODO_ITEM", todoItem)
   },
 }
 
 const getters = {
-  getTodosUncompleted () {
+  getTodosUncompleted() {
     return state.todos.filter(i => i.completed === false).length
   },
-  getTodos () {
+  getTodos() {
     return state.todos
   }
 }
