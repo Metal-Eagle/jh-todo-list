@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <main>
-      <h1 class="text">
-        Todo list <span class="chip">{{getTodosUncompleted}}</span>
-      </h1>
+      <h3 class="text-center">
+        Todo list <span class="badge badge-pill badge-success">{{getTodosUncompleted}}</span>
+      </h3>
       <TodoList
         :todos="todos"
         v-if="todos.length"
       />
       <p
-        class="text"
+        class="text-center"
         v-else
       >Add to list
       </p>

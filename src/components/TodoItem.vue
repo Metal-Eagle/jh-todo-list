@@ -1,19 +1,25 @@
 <template>
-  <li>
-    <span :class="{completed: todo.completed}">
-      <input
-        v-model="todo.completed"
-        class="checkbox"
-        type="checkbox"
-        @change="updateTodo(todo)"
-      >
-      {{todo.title}}
-    </span>
+  <div class="row">
+    <div class="col-10">
+
+      <span :class="{completed: todo.completed}">
+        <input
+          v-model="todo.completed"
+          class="checkbox"
+          type="checkbox"
+          @change="updateTodo(todo)"
+        >
+        {{todo.title}}
+      </span>
+    </div>
+
     <button
-      class="btn"
+      class="btn btn-secondary mb-3 col-2"
       @click="removeTodo(todo)"
     > Remove</button>
-  </li>
+
+  </div>
+
 </template>
 
 <script>

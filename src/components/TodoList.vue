@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <ul>
-      <TodoItem
-        class="todoItem"
-        v-for="(todo, index) in todos"
-        :key="index"
-        :todo="todo"
-      />
-    </ul>
+  <div class="item">
+    <TodoItem
+      class="todoItem"
+      v-for="(todo, index) in todos"
+      :key="index"
+      :todo="todo"
+    />
   </div>
 </template>
 

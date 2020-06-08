@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <div>
-      <input
-        class="input"
-        type="text"
-        v-model="title"
-      >
-      <button
-        class="btn"
-        type="submit"
-        @click="onSubmit"
-      >Add to list</button>
-    </div>
+  <div class="row mb-3">
+
+    <input
+      class="input-group input-group-sm col-8"
+      type="text"
+      v-model="title"
+    >
+    <div class="col-2"></div>
+    <button
+      class="btn btn-primary col-2"
+      type="button"
+      @click="onSubmit"
+    >Add to list</button>
+
+  </div>
 
   </div>
 
