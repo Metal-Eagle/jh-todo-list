@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <main>
-      <h3 class="text-center">
+      <p class="h3 text-center">
         Todo list <span class="badge badge-pill badge-success">{{getTodosUncompleted}}</span>
-      </h3>
+      </p>
       <TodoList
         :todos="todos"
         v-if="todos.length"

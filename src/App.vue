@@ -4,12 +4,10 @@
     id="app"
     class="container"
   >
-    <!-- <div id="nav">
-      <router-link to="/">Todo List</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav
+      class="navbar navbar-expand-lg navbar-light "
+      style="background-color: #e3f2fd;"
+    >
       <div
         class="collapse navbar-collapse"
         id="navbarSupportedContent"
@@ -26,7 +24,6 @@
               to="/about"
               class="nav-link"
             >About</router-link>
-
           </li>
         </ul>
       </div>
